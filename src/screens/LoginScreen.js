@@ -1,12 +1,15 @@
 // screens/LoginScreen.js
 import { ImageBackground, Text, TextInput, View } from 'react-native';
 import styles from '../components/styles'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function LoginScreen() {
 const [email, setEmail] = useState()
 const [senha, setSenha] = useState()
 
+useEffect(() => {
+    console.log(email, senha)
+}, [email, senha])
 return (
     <ImageBackground
     style={styles.container}
@@ -16,9 +19,9 @@ return (
         <View>
             <Text>Faça seu Login</Text>
             <Text>Digite seu E-mail</Text>
-            <TextInput/>
+            <TextInput onChangeText={setEmail}/>
             <Text>Digite sua Senha</Text>
-            <TextInput
+            <TextInput onChangeText={setSenha}
             secureTextEntry={true}
             />
         </View>
