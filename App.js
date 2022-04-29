@@ -2,7 +2,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer"; 
 import LoginScreen from "./src/screens/LoginScreen";
 
-
 const Drawer = createDrawerNavigator();
 
 export default function App() {
