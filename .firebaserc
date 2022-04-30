@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "fir-auth-c60e1",
+    "development": "fir-auth-c60e1"
+  },
+  "targets": {}
+}
