@@ -39,9 +39,11 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundImage: '../assets/fundo.jpg',
+    backgroundImage: `url(${Background})`,
     paddingTop: 50,
-    paddingHorizontal: 12
+    paddingHorizontal: 12,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   },
   row: {
     flexDirection: 'row',

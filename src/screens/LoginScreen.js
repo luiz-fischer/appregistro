@@ -6,7 +6,7 @@ import { StyleSheet, Text, View, Button as RNButton } from "react-native";
 import { Button, InputField, ErrorMessage } from "../components";
 import Firebase from "../config/firebase";
 
-import Background from "../assets/fundo.jpg";
+import Background from '../assets/fundo.jpg'
 
 const auth = Firebase.auth();
 
@@ -100,8 +100,7 @@ export default function LoginScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundImage:
-      "url('https://firebasestorage.googleapis.com/v0/b/fir-auth-c60e1.appspot.com/o/fundo.jpg?alt=media&token=310d168d-51cc-41e6-83c4-fd4392ad71e9')",
+    backgroundImage: `url(${Background})`,
     paddingTop: 50,
     paddingHorizontal: 12,
     backgroundSize: "cover",
