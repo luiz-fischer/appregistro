@@ -13,3 +13,9 @@ web-build/
 # macOS
 .DS_Store
 /.env
+/.firebase
+/.firebaserc
+/firebase.json
+.firebase
+/.firebase/hosting.d2ViLWJ1aWxk.cache
+/.firebase/hosting.cHVibGlj.cache

@@ -18,3 +18,5 @@
 [Firebase Deploy](https://www.tutorialspoint.com/firebase/firebase_deploying.htm)
 [Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart?hl=pt-br)
 [Firebase Expo](https://docs.expo.dev/guides/using-firebase/)
+[dotenv config](https://github.com/motdotla/dotenv#config)
+[env expo](https://docs.expo.dev/guides/environment-variables/)
