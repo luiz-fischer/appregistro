@@ -4,7 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const InputField = ({
   leftIcon,
-  iconColor = '#000',
+  iconColor = "#20202a",
   rightIcon,
   inputStyle,
   containerStyle,
@@ -43,21 +43,36 @@ const InputField = ({
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 4,
+    borderRadius: 6,
     flexDirection: 'row',
-    padding: 12
+    width: '70%',
+    alignSelf: "center",
+    padding: 5,
+    height: '8%',
+    backgroundColor: "#20202a",
+    
+
   },
   leftIcon: {
-    marginRight: 10
+    marginRight: 10,
+    padding: 10,
+    color: '#FFF',
+
   },
   input: {
     flex: 1,
-    width: '100%',
-    fontSize: 18
+    width: '70%',
+    fontSize: 20,
+    padding: 5,
+    heigth: '100%',
+    color: '#FFF',
+
   },
   rightIcon: {
     alignSelf: 'center',
-    marginLeft: 10
+    marginLeft: 10,
+    color: '#FFF',
+    padding: 10 
   }
 });
 

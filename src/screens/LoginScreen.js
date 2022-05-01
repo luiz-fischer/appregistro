@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { useState } from "react";
-import { StyleSheet, Text, View, Button as RNButton } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 import { Button, InputField, ErrorMessage } from "../components";
 import Firebase from "../config/firebase";
@@ -40,13 +40,12 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="dark-content" />
-      <Text style={styles.title}>Entrar</Text>
+      <Text style={styles.title}>!Entrar!</Text>
       <InputField
         inputStyle={{
-          fontSize: 14,
+          fontSize: 24,
         }}
         containerStyle={{
-          backgroundColor: "#fff",
           marginBottom: 20,
         }}
         leftIcon="email"
@@ -60,10 +59,9 @@ export default function LoginScreen({ navigation }) {
       />
       <InputField
         inputStyle={{
-          fontSize: 14,
+          fontSize: 24,
         }}
         containerStyle={{
-          backgroundColor: "#fff",
           marginBottom: 20,
         }}
         leftIcon="lock"
@@ -80,9 +78,8 @@ export default function LoginScreen({ navigation }) {
       {loginError ? <ErrorMessage error={loginError} visible={true} /> : null}
       <Button
         onPress={onLogin}
-        backgroundColor="#f57c00"
-        title="Login"
-        tileColor="#fff"
+        backgroundColor="#7c57da"
+        title="Entrar"
         titleSize={20}
         containerStyle={{
           marginBottom: 24,
@@ -90,9 +87,8 @@ export default function LoginScreen({ navigation }) {
       />
       <Button
         onPress={() => navigation.navigate("Signup")}
-        title="Cadastar Novo Usuário"
-        backgroundColor="#f57c00"
-        tileColor="#fff"
+        title="Novo Usuário"
+        backgroundColor="#dc4491"
         titleSize={20}
       />
     </View>
@@ -103,9 +99,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundImage: `url(${Background})`,
-    paddingTop: 50,
-    paddingHorizontal: 12,
+    paddingTop: 100,
+    width: 600,
     backgroundSize: "cover",
+    alignSelf: "center",
     backgroundRepeat: "no-repeat"
   },
   title: {

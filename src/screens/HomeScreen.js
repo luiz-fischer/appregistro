@@ -23,7 +23,8 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <StatusBar style='dark-content' />
       <View style={styles.row}>
-        <Text style={styles.title}>Bem-Vindo {user.email}!</Text>
+        <Text style={styles.title}>!!Bem-Vindo!!</Text>
+        <Text style={styles.title}>{user.email}!</Text>
         <IconButton
           name='logout'
           size={24}
@@ -41,9 +42,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundImage: `url(${Background})`,
     paddingTop: 50,
+    width: '40%',
     paddingHorizontal: 12,
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    alignSelf: "center",
+    backgroundRepeat: "no-repeat"
   },
   row: {
     flexDirection: 'row',

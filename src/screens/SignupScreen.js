@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { useState } from "react";
-import { StyleSheet, Text, View, Button as RNButton } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 import { Button, InputField, ErrorMessage } from "../components";
 import Firebase from "../config/firebase";
@@ -40,13 +40,12 @@ export default function SignupScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="dark-content" />
-      <Text style={styles.title}>Criar uma nova Conta!</Text>
+      <Text style={styles.title}>!Criar uma nova Conta!</Text>
       <InputField
         inputStyle={{
-          fontSize: 14,
+          fontSize: 24,
         }}
         containerStyle={{
-          backgroundColor: "#fff",
           marginBottom: 20,
         }}
         leftIcon="email"
@@ -60,10 +59,9 @@ export default function SignupScreen({ navigation }) {
       />
       <InputField
         inputStyle={{
-          fontSize: 14,
+          fontSize: 24,
         }}
         containerStyle={{
-          backgroundColor: "#fff",
           marginBottom: 20,
         }}
         leftIcon="lock"
@@ -80,9 +78,8 @@ export default function SignupScreen({ navigation }) {
       {signupError ? <ErrorMessage error={signupError} visible={true} /> : null}
       <Button
         onPress={onHandleSignup}
-        backgroundColor="#f57c00"
-        title="Signup"
-        tileColor="#fff"
+        backgroundColor="#7c57da"
+        title="Cadastrar"
         titleSize={20}
         containerStyle={{
           marginBottom: 24,
@@ -90,9 +87,8 @@ export default function SignupScreen({ navigation }) {
       />
       <Button
         onPress={() => navigation.navigate("Login")}
-        title="Go to Login"
-        backgroundColor="#f57c00"
-        tileColor="#fff"
+        title="Tela de Login"
+        backgroundColor="#dc4491"
         titleSize={20}
       />
     </View>
@@ -103,10 +99,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundImage: `url(${Background})`,
-    paddingTop: 50,
-    paddingHorizontal: 12,
+    paddingTop: 100,
+    width: 600,
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    alignSelf: "center",
+    backgroundRepeat: "no-repeat"
   },
   title: {
     fontSize: 24,

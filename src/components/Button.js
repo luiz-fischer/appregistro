@@ -4,10 +4,10 @@ import { StyleSheet, Pressable, Text } from 'react-native';
 const Button = ({
   title,
   backgroundColor = '#000',
-  titleColor = '#fff',
-  titleSize = 14,
+  titleColor = '#000',
+  titleSize = 16,
   onPress,
-  width = '100%',
+  width = '40%',
   containerStyle
 }) => {
   return (
@@ -29,7 +29,7 @@ const Button = ({
         return [
           styles.base,
           {
-            opacity: 1,
+            opacity: 0.7,
             backgroundColor,
             width
           },
@@ -46,14 +46,15 @@ const Button = ({
 
 const styles = StyleSheet.create({
   text: {
-    fontWeight: '600'
+    fontWeight: '500'
   },
   base: {
     alignItems: 'center',
+    alignSelf: "center",
     justifyContent: 'center',
     minHeight: 42,
-    borderRadius: 4,
-    paddingHorizontal: 12
+    borderRadius: 10,
+    paddingHorizontal: 12,
   }
 });
 

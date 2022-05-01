@@ -11,7 +11,7 @@ const IconButton = ({ color, size, onPress, name }) => {
             styles.base,
             {
               opacity: 0.5,
-              backgroundColor: 'transparent'
+              backgroundColor: 'transparent',
             }
           ];
         }
@@ -28,7 +28,7 @@ const IconButton = ({ color, size, onPress, name }) => {
 const styles = StyleSheet.create({
   base: {
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   }
 });
 
