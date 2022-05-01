@@ -40,7 +40,7 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="dark-content" />
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Entrar</Text>
       <InputField
         inputStyle={{
           fontSize: 14,
@@ -50,7 +50,7 @@ export default function LoginScreen({ navigation }) {
           marginBottom: 20,
         }}
         leftIcon="email"
-        placeholder="Enter email"
+        placeholder="Digite o seu E-Mail"
         autoCapitalize="none"
         keyboardType="email-address"
         textContentType="emailAddress"
@@ -67,7 +67,7 @@ export default function LoginScreen({ navigation }) {
           marginBottom: 20,
         }}
         leftIcon="lock"
-        placeholder="Enter password"
+        placeholder="Digite a sua senha"
         autoCapitalize="none"
         autoCorrect={false}
         secureTextEntry={passwordVisibility}
@@ -88,10 +88,12 @@ export default function LoginScreen({ navigation }) {
           marginBottom: 24,
         }}
       />
-      <RNButton
+      <Button
         onPress={() => navigation.navigate("Signup")}
-        title="Go to Signup"
-        color="#fff"
+        title="Cadastar Novo Usuário"
+        backgroundColor="#f57c00"
+        tileColor="#fff"
+        titleSize={20}
       />
     </View>
   );

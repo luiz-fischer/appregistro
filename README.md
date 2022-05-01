@@ -20,3 +20,4 @@
 [Firebase Expo](https://docs.expo.dev/guides/using-firebase/)
 [dotenv config](https://github.com/motdotla/dotenv#config)
 [env expo](https://docs.expo.dev/guides/environment-variables/)
+[config env](https://firebase.google.com/docs/functions/config-env)

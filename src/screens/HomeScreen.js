@@ -23,7 +23,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <StatusBar style='dark-content' />
       <View style={styles.row}>
-        <Text style={styles.title}>Welcome {user.email}!</Text>
+        <Text style={styles.title}>Bem-Vindo {user.email}!</Text>
         <IconButton
           name='logout'
           size={24}
@@ -31,7 +31,7 @@ export default function HomeScreen() {
           onPress={handleSignOut}
         />
       </View>
-      <Text style={styles.text}>Your UID is: {user.uid} </Text>
+      <Text style={styles.text}>O seu UUI é: {user.uid} </Text>
     </View>
   );
 }
