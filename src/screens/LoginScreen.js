@@ -10,12 +10,15 @@ import Background from '../assets/fundo.jpg'
 
 const auth = Firebase.auth();
 
+
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisibility, setPasswordVisibility] = useState(true);
   const [rightIcon, setRightIcon] = useState("eye");
   const [loginError, setLoginError] = useState("");
+
+  
 
   const handlePasswordVisibility = () => {
     if (rightIcon === "eye") {
@@ -38,6 +41,7 @@ export default function LoginScreen({ navigation }) {
   };
 
   return (
+    
     <View style={styles.container}>
       <StatusBar style="dark-content" />
       <Text style={styles.title}>!Entrar!</Text>
@@ -96,6 +100,9 @@ export default function LoginScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  body: {
+    backgroundColor: '#F3f' 
+  },
   container: {
     flex: 1,
     backgroundImage: `url(${Background})`,

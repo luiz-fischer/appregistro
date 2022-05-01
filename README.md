@@ -2,6 +2,7 @@
 
 - Criar um App (HTML) no firebase
 - Ir em Authentication -> Sign-in method localizado no MENU
+- Escolher E-mail/Senha
 - Enable Email & Password auth method
 - Salvar
 
